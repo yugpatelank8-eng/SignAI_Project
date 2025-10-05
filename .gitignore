@@ -11,8 +11,6 @@ __pycache__/
 # --- Large Generated Files ---
 # These files are created by running your scripts. They are large and don't belong in the source code.
 # The README explains how to generate them.
-*.h5
-*.joblib
 *.csv
 
 
