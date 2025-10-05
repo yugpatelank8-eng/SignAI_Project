@@ -1,0 +1,48 @@
+# This file tells Git which files and folders to ignore.
+
+# --- Python / Backend Dependencies ---
+# Ignore the entire virtual environment folder. It's huge and machine-specific.
+venv/
+
+# Ignore Python bytecode files and cache
+__pycache__/
+*.pyc
+
+# --- Large Generated Files ---
+# These files are created by running your scripts. They are large and don't belong in the source code.
+# The README explains how to generate them.
+*.h5
+*.joblib
+*.csv
+
+
+# --- THE MOST IMPORTANT ONE ---
+# Ignore the entire 87,000-image dataset. This is GIGABYTES of data.
+# NEVER commit your raw dataset to Git.
+dataset/
+
+
+# --- Node.js / Frontend Dependencies ---
+# Ignore the massive node_modules folder. This can be recreated with `npm install`.
+node_modules/
+
+# Ignore the build output folder. This is for deployment, not source code.
+dist/
+
+# Ignore log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# --- General ---
+# Ignore environment variables files (good practice)
+.env*
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea
