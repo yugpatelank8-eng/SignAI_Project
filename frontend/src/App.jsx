@@ -334,7 +334,7 @@ const AiInterfacePage = () => {
         }
         setupWebcam();
         
-        const socket = new WebSocket('ws://127.0.0.1:8000/ws');
+        const socket = new WebSocket('wss://signai-backend-yug.onrender.com/ws');
         socket.onopen = () => {
             console.log("✅ WebSocket connection established!");
             setSocketStatus('Ready');
